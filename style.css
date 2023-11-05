@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+
+    width: 70vh;
+
+
+
+     /* helps to create 3rows */
+    /* grid-template-rows: 100px 100px 100px;         */
+    row-gap: 10px;
+
+
+    /* helps to create 3columns */
+    /* grid-template-columns: 100px 100px 100px ;    */
+    column-gap: 10px; 
+
+
+    /* Better way for responsive screens  */
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* shorthand for above  columns*/
+    grid-template-columns: repeat(3,1fr);
+
+
+
+    /* grid-template-rows: 2fr 2fr 3fr; */
+      /* shorthand for above  rows*/
+    grid-template-rows: repeat(2, 2fr) 3fr;
+
+
+    /* End of Better way for responsive screens  */
+
+
+
+    /* align-items: center;
+    justify-items: center; */
+
+
+    justify-content: center;
+
+
+}
+
+.item-first{
+    background-color: green;
+    /* grid-row-start: 2;grid-row-end: 3; */
+    /* grid-column-start: 2;grid-column-end: 4; */
+
+    /* shorthand  */
+
+    grid-row: 2/3;
+    grid-column: 2/4;
+    /* justify-self: center; this takes content width  */  
+    /* align-self: center;    this takes content width    */
+
+    height: 300px;
+    width: 400px;
+}
+
+.item-second{
+    background-color: red;
+    
+
+    grid-row: 3;
+    grid-column: 2/4;
+}
