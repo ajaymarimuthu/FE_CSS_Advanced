@@ -8,17 +8,13 @@ body{
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-     
+    align-items: center;     
 }
 
 .box{
     height: 200px;
     width: 200px;
-
-    /* transition: transform 0.3s; */
-
-   
+    /* transition: transform 0.3s; */   
 }
 
 .one{
@@ -33,6 +29,8 @@ body{
     background-color: aqua;
 }
 
+/* --------------- Scale and rotate --------------  */
+
 .one:hover{
     transform: rotateX(90deg);
 }
@@ -45,4 +43,45 @@ body{
 .three:hover{
     transform: rotate(50deg);
     /* transform: rotate(20deg,50deg); */
+}
+
+.three:hover{
+
+    /* we can combine properties like this below  */
+    transform: scale(1.5) rotate(50deg);
+    
+}
+
+/* --------------- END ofScale and rotate --------------  */
+
+
+
+/* ---------------SKEW property in transform  --------------  */
+
+ 
+.three:hover{
+
+    /* Used for twisting the ends  */
+ 
+    transform:  skewY(40deg)
+    
+}
+
+
+/* --------------- END of SKEW property in transform  --------------  */
+
+.one:hover{
+
+    /* Used for moving the element across X axis  */ 
+    transform:  translateX(100%);
+
+    /* takes negative values as well  */
+    
+
+      /* Used for moving the element across Y axis  */ 
+      transform:  translateY(100%);
+
+
+    /* Used for moving the element across both X and Y axis  */ 
+      transform:  translate(50% , 50%);
 }

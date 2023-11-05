@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+  
+    }
+
+    body{
+        display: grid;
+        place-items: center ;
+        height: 100vh;
+    }
+
+  
+   
+  
+    .container{
+        width: 400px; 
+         height: 400px;
+        /* background-color: green; */
+
+
+        /*------ flex way of centering ---- */
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /*------ GRID way of centering ---- */
+
+        /* display: grid;
+        justify-items: center;
+        align-items: center; */
+
+        /* place-items: center; */
+
+
+
+        position: relative;
+
+    }
+
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color:aqua;
+
+        border: 2px solid black;
+        border-radius: 100%;
+
+    
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+ 
+
+        transform: translate(-50%,-50%);
+
+
+        
+    }
+
+</style>
+<body>
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
