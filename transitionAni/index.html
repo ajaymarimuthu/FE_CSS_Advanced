@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+     
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        transition-property: width;
+        transition-duration: 3s;
+    }
+
+    .one{
+      background-color: red;
+      transition-duration: 2s;
+
+      transition-property: background-color, width ;
+
+      /* this is timing function .. start slowly end fastly */
+      transition-timing-function: ease-in;
+
+        /* this is timing function .. start fastly end slowly   */
+        transition-timing-function: ease-out;
+
+      /* this is timing function .. transisiton starts after 3s only */
+        transition-delay: 3s;
+
+ 
+    }
+
+    .one:hover{
+
+      width: 100vw;
+      background-color: black;
+    }
+
+
+    .two{
+        background-color: yellow;
+    }
+
+    .three{
+        background-color: aqua;
+    }
+
+
+  </style>
+  <body>
+    <div class="box one"></div>
+    <div class="box two"></div>
+    <div class="box three"></div>
+  </body>
+</html>
